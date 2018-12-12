@@ -1,0 +1,7 @@
+<%= render('layouts/errors', :object => @sighting) %>
+
+<%= form_for [@list, @sighting] do |f| %>
+  <%= f.label :date_seen %>
+  <%= f.text_field :date_seen %>
+  <p><%= submit %></p>
+<%= end %>
